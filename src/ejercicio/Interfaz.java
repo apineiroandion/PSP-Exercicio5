@@ -18,6 +18,15 @@ public class Interfaz {
         comando = scanner.nextLine();
         return comando;
     }
-    //TODO: Implementar el metodo mostrarResultado null si no se ha ejecutado ningun comando o el valor de salida del comando
-
+    /**
+     * Metodo que muestra el resultado de la ejecucion del comando
+     * @param resultado Integer con el resultado de la ejecucion del comando
+     */
+    public static void mostrarResultado(Integer resultado) {
+        if (resultado == null) {
+            System.out.println("No se ha ejecutado ningun comando");
+        } else {
+            System.out.println("El comando ha devuelto el valor: " + resultado);
+        }
+    }
 }
